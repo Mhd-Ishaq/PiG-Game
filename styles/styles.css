@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root{
+  --flickr-pink: #f72585ff;
+--byzantine: #b5179eff;
+--purple: #7209b7ff;
+--purple-2: #560badff;
+--try-pan-blue: #480ca8ff;
+--try-pan-blue-2: #3a0ca3ff;
+--persian-blue: #3f37c9ff;
+--ultramarine-blue: #4361eeff;
+--dodger-blue: #4895efff;
+--vivid-sky-blue: #4cc9f0ff;
+}
+
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  background-image: url("../images/gradient.png");
+}
