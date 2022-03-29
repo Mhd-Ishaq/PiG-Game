@@ -11,6 +11,7 @@
 --ultramarine-blue: #4361eeff;
 --dodger-blue: #4895efff;
 --vivid-sky-blue: #4cc9f0ff;
+--orange : rgb(255, 136, 0);
 }
 
 *,*::after,*::before{
@@ -28,4 +29,211 @@ html{
 body{
   font-family: 'Lato', sans-serif;
   background-image: url("../images/gradient.png");
+  width: 80%;
+  height: 100vh;
+}
+
+
+.content{
+  margin-left: 15rem;
+}
+.nav-bar{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  height: 5vh;
+}
+.nav-bar .logo{
+  padding: 0.5rem ;
+  background-color: white;
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px white;
+}
+.nav-bar .btn-rules{
+  padding: 0.5rem ;
+  background-color: white;
+  color: #222;
+  border-radius: 5px;
+}
+.btn-rules:hover{
+  background-color:  #222;
+  color:white;
+}
+
+.rules-container{
+  height: 55vh;
+  background-color: white;
+  position: absolute;
+  width: 40%;
+  z-index: 100;
+  border: 2px solid black;
+  left: 30%;
+  top: 22%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.hidden{
+  display: none;
+}
+
+
+.rules-container .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.rules-container .header p{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.rules-container .header .btn-close{
+  padding: 0.3rem 0.5rem;
+  background-color: red;
+  color: #222;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px red;
+}
+.rules-container .header.btn-close:hover {
+  background-color: #222;
+  color: red;
+}
+
+.rules-container ul li{
+  padding:0.5rem ;
+  /* box-sizing: content-box; */
+  list-style-position: inside;
+  line-height: 1.5;
+  font-size: 0.8rem;
+}
+.main-container{
+  width: 100%;
+  margin: auto;
+  height: 75vh;
+  background-color: white;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  position:relative;
+  box-shadow: 2px 3px white;
+}
+.main-container .player-1,
+.main-container .player-2{
+  /* background-color: whitesmoke; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius : 1rem;
+}
+.main-container .player-2{
+  /* background-color:white; */
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius : 1rem;
+}
+.player-1 .title,
+.player-2 .title{
+  /* margin-top: 5rem; */
+  font-size: 2rem;
+  margin: 5rem 0 1.5rem 0;
+}
+.player-1 .score,
+.player-2 .score{
+  font-size: 3rem;
+  color: var(--orange);
+  margin-bottom: 3rem;
+}
+
+.player-1 .current,
+.player-2 .current{
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+.player-1 .current-value,
+.player-2 .current-value{
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+.player-active{
+  background-color: whitesmoke;
+}
+.winner{
+  background-color: lightcoral;
+}
+
+.new-game,
+.roll-dice,
+.hold{
+  padding: 0.5rem;
+  background-color: var(--orange);
+  color: white;
+  border-radius: 0.3rem;
+  box-shadow: 2px 2px darkgoldenrod;
+  position: absolute;
+}
+.new-game:hover,
+.roll-dice:hover,
+.hold:hover{
+  background-color: white;
+  color: var(--orange);
+}
+.new-game{
+  left: 46%;
+  top: 20%;
+}
+
+.roll-dice{
+  left: 46.5%;
+  bottom: 36%;
+}
+.hold{
+  left: 47.5%;
+  bottom: 28%;
+}
+.box {
+  /* background-color: #222; */
+  /* padding: 0.2rem; */
+  width: 4%;
+  position: absolute;
+  right: 48%;
+  bottom: 49%;
+  /* display: none; */
+}
+.dice {
+  width: 4%;
+  position: absolute;
+  right: 48%;
+  bottom: 49%;
+  /* display: none; */
+}
+
+.hidden {
+  display: none;
+}
+/* .transparent {
+  opacity: 0;
+} */
+
+@media only screen and (max-width : 900px){
+  html{
+
+    font-size: 14px;
+  }
 }
